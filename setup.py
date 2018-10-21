@@ -1,11 +1,17 @@
-from distutils.core import setup
+from setuptools import setup
+from os import path
+
+with open(path.join(path.abspath(path.dirname(__file__)), 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
   name = 'arbitrium',
   packages = ['arbitrium'],
   version = '1.1.3',
   license='MIT',
   description = 'Arbitrium - The Easy Menu System For Python',
-  long_description = "Arbitrium is an easy-to-use menu system for Python 3.5.1 and above. For usage, see https://github.com/bentechy66/arbitrium.",
+  long_description = long_description,
+  long_description_content_type='text/markdown',
   author = 'Ben Griffiths',
   author_email = 'sendbenspam@yahoo.co.uk',
   url = 'https://github.com/bentechy66/arbitrium',
