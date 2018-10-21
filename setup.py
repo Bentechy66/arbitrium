@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'arbitrium',
   packages = ['arbitrium'],
-  version = '1.1.2',
+  version = '1.1.3',
   license='MIT',
   description = 'Arbitrium - The Easy Menu System For Python',
   long_description = "Arbitrium is an easy-to-use menu system for Python 3.5.1 and above. For usage, see https://github.com/bentechy66/arbitrium.",
