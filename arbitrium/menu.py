@@ -40,3 +40,24 @@ def menu(choices):
             return func(int(choice)) # User wants to quit, return the function so we can wrap it again later
     return inner_wrapper
   return menu_wrapper
+
+def requires_auth(function_or_bool, is_function=False):
+    '''Decorator to add required auth to a menu
+       First argument is either a boolean or a function
+       Second optional argument is a Bool on whether the first argument is a function. Defaults to False.
+       If {is_function}, this decorator will run {function_or_bool} as a function and, whether it returns True or False, either continue with the menu, or exit.
+       Else, it will simply use function_or_bool as a boolean value to tell whether to show the menu.
+
+      returns -> function:menu_wrapper'''
+    def requires_auth_wrapper(menu_func):
+      def menu_wrapper(*args, **kwargs):
+          print("Authenticating...")
+          if is_function:
+              if not function_or_bool():
+                  return print("Invalid username / password") # Replace function with print to tell them they got their creds wrong
+          else:
+              if not function_or_bool:
+                  return print("Invalid username / password")
+          return menu_func(*args, **kwargs)
+      return menu_wrapper
+    return requires_auth_wrapper
