@@ -1,1 +1,1 @@
-from arbitrium.menu import menu
+from arbitrium.menu import menu, requires_auth
