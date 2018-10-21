@@ -54,10 +54,10 @@ def requires_auth(function_or_bool, is_function=False):
           print("Authenticating...")
           if is_function:
               if not function_or_bool():
-                  return print("Invalid username / password") # Replace function with print to tell them they got their creds wrong
+                  return print("Invalid authentication.") # Replace function with print to tell them they got their creds wrong
           else:
               if not function_or_bool:
-                  return print("Invalid username / password")
+                  return print("Invalid authentication.")
           return menu_func(*args, **kwargs)
       return menu_wrapper
     return requires_auth_wrapper
