@@ -1,4 +1,6 @@
-<div style="text-align:center"><img src ="https://ben.mctrees.net/upload/upload/ODQuMjEuMTUxLjIwOA/Arbitrium.png" /></div>
+<p align="center">
+  <img src ="https://ben.mctrees.net/upload/upload/ODQuMjEuMTUxLjIwOA/Arbitrium.png" />
+</p>
 
 ## Install
 `pip install arbitrium`
