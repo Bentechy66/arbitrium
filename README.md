@@ -1,4 +1,5 @@
-# Arbitrium - The Easy Menu System For Python
+# Arbitrium
+![Arbitrium Logo](https://ben.mctrees.net/upload/upload/ODQuMjEuMTUxLjIwOA/Arbitrium.png)
 
 ## Install
 `pip install arbitrium`
