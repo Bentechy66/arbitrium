@@ -1,5 +1,4 @@
-# Arbitrium
-![Arbitrium Logo](https://ben.mctrees.net/upload/upload/ODQuMjEuMTUxLjIwOA/Arbitrium.png)
+<div style="text-align:center"><img src ="https://ben.mctrees.net/upload/upload/ODQuMjEuMTUxLjIwOA/Arbitrium.png" /></div>
 
 ## Install
 `pip install arbitrium`
